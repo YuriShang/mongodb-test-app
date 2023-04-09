@@ -1,4 +1,4 @@
 mongodb:
-  uri: mongodb://localhost:27017
+  uri: адрес бд
 telegram:
-  token: 6135412461:AAHNAaCkWnvGiUxqT2fEgMwUE7jr76q1h0A
+  token: ваш токен
