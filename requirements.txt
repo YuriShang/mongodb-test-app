@@ -1,0 +1,4 @@
+aiogram==3.0.0b7
+motor==3.1.2
+pymongo==4.3.3
+pydantic==1.10.7

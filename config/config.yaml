@@ -1,0 +1,4 @@
+mongodb:
+  uri: mongodb://localhost:27017
+telegram:
+  token: 6135412461:AAHNAaCkWnvGiUxqT2fEgMwUE7jr76q1h0A
