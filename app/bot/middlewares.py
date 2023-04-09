@@ -15,10 +15,10 @@ def _is_valid_json(msg):
     except JSONDecodeError:
         return
     except ValidationError as e:
-        for err in e.errors():
-            if 'group_type' in err["loc"]:
-                return "Поле 'group_type' должно содержать одно из следующих значений: " \
-                       "hour, day, month"
+        err = e.errors()
+        if len(err) == 1:
+            if 'group_type' in err[0]["loc"]:
+                return err[0]["msg"]
         return
     except TypeError:
         return

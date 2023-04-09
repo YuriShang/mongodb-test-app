@@ -10,5 +10,5 @@ class InputData(BaseModel):
     @validator('group_type')
     def group_type_check(cls, v):
         if not any([v == 'hour', v == 'day', v == 'month']):
-            raise ValueError('value must be "hour", "day" or "month"')
+            raise ValueError('Поле "group_type" должно содержать одно из следующих значений: hour, day, month')
         return v
